@@ -39,7 +39,17 @@ Cowork (Specify & Plan)  →  Claude Code (Implement)  →  Deploy (UpCloud or G
 
 ## Install
 
-Download [`specify-and-plan.skill`](./specify-and-plan.skill) and open it in Claude Desktop to install, or copy the `SKILL.md` file into your `.claude/skills/specify-and-plan/` directory.
+One command — works in any terminal:
+
+```bash
+mkdir -p ~/.claude/skills/specify-and-plan && \
+curl -o ~/.claude/skills/specify-and-plan/SKILL.md \
+  https://raw.githubusercontent.com/Emerging-Tech-Visma/specify-and-plan/main/SKILL.md
+```
+
+This places the skill in your personal skills folder (`~/.claude/skills/`), making it available across all your Claude Code projects. Once installed, invoke it with `/specify-and-plan` or just describe an idea — Claude will load it automatically.
+
+> The `specify-and-plan.skill` file in this repo is a bundled installer package for superpowers-compatible setups.
 
 ## Based on
 
@@ -47,5 +57,4 @@ This skill draws on practices from the article [How to write a good spec for AI 
 
 ## Part of the Emerging Tech Visma toolkit
 
-- [et-upcloud](https://github.com/Emerging-Tech-Visma/et-upcloud) — Claude Code plugin for UpCloud deployment
-- **specify-and-plan** — This skill. Specify what to build, plan how to build it
+- [et-code](https://github.com/Emerging-Tech-Visma/code-et) — Claude Code setup for Emerging Tech Visma
